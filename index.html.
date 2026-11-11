@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="kk">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ДНҚ — Өмір құпиясы</title>
+
+<style>
+
+body {
+
+ margin: 0;
+
+ font-family: Arial, sans-serif;
+
+ background: linear-gradient(135deg,#07182f,#123d68);
+
+ color: white;
+
+ text-align: center;
+
+}
+
+header {
+
+ padding: 35px 15px;
+
+ background: #061329;
+
+}
+
+h1 { color: #54e5ff; font-size: 40px; }
+
+section {
+
+ background: rgba(255,255,255,0.1);
+
+ margin: 20px auto;
+
+ padding: 25px;
+
+ border-radius: 18px;
+
+ max-width: 700px;
+
+}
+
+.dna {
+
+ font-size: 75px;
+
+ animation: spin 4s infinite linear;
+
+}
+
+@keyframes spin {
+
+ 0% {transform:rotateY(0deg);}
+
+ 100% {transform:rotateY(360deg);}
+
+}
+
+button {
+
+ background: #36d9f5;
+
+ border: none;
+
+ padding: 12px 22px;
+
+ border-radius: 10px;
+
+ font-size: 17px;
+
+ cursor: pointer;
+
+ margin: 8px;
+
+}
+
+button:hover {background:white;}
+
+footer {padding:20px;color:#a8dfff;}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🧬 ДНҚ — ӨМІР ҚҰПИЯСЫ</h1>
+
+<p>Биология әлеміне қош келдің!</p>
+
+</header>
+
+<section>
+
+<div class="dna">🧬</div>
+
+<h2>ДНҚ дегеніміз не?</h2>
+
+<p>
+
+ДНҚ — тірі ағзалардың тұқымқуалаушылық
+
+ақпаратын сақтайтын молекула.
+
+Ол ағзаның дамуы мен жасушалардың
+
+қызметіне қажетті ақпаратты қамтиды.
+
+</p>
+
+</section>
+
+<section>
+
+<h2>ДНҚ құрылысы</h2>
+
+<p>ДНҚ қос шиыршық пішінді болады.</p>
+
+<p>Ол төрт азотты негізден тұрады:</p>
+
+<h3>А — Аденин</h3>
+
+<h3>Т — Тимин</h3>
+
+<h3>Г — Гуанин</h3>
+
+<h3>Ц — Цитозин</h3>
+
+<p>А — Т, Г — Ц болып жұптасады.</p>
+
+</section>
+
+<section>
+
+<h2>ДНҚ қызметі</h2>
+
+<p>1. Тұқымқуалаушылық ақпаратты сақтайды.</p>
+
+<p>2. Ақуыз синтезіне қатысады.</p>
+
+<p>3. Ақпаратты ұрпаққа береді.</p>
+
+<p>4. Жасушаның жұмысына қатысады.</p>
+
+</section>
+
+<section>
+
+<h2>🔬 Қызықты деректер</h2>
+
+<p>ДНҚ адам жасушаларында кездеседі.</p>
+
+<p>Бір жасушадағы ДНҚ-ны созса,
+
+ұзындығы шамамен 2 метр болады.</p>
+
+<p>Гендер ДНҚ құрамында орналасады.</p>
+
+</section>
+
+<section>
+
+<h2>📝 Біліміңді тексер!</h2>
+
+<p>ДНҚ қандай пішінде болады?</p>
+
+<button onclick="check(1)">Қос шиыршық</button>
+
+<button onclick="check(2)">Шар тәрізді</button>
+
+<button onclick="check(3)">Үшбұрыш</button>
+
+<h3 id="result"></h3>
+
+</section>
+
+<footer>
+
+<p>© 2026 | Биология жобасы 🧬</p>
+
+</footer>
+
+<script>
+
+function check(answer) {
+
+ let result = document.getElementById("result");
+
+ if(answer === 1) {
+
+  result.innerHTML = "✅ Дұрыс жауап! Жарайсың!";
+
+ } else {
+
+  result.innerHTML = "❌ Қате! Қайтадан көр!";
+
+ }
+
+}
+
+</script>
+
+</body>
+
+</html>
